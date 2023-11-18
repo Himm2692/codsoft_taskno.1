@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: yellow;
+}
+.left-nav {
+  display: flex;
+}
+.left-nav i {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.right-nav ul {
+  display: flex;
+}
+.right-nav ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+.section-1 {
+  background: url("./images/img.jpg") no-repeat;
+  background-size: cover; /* This ensures the image covers the entire container */
+  height: 500px;
+  width: 100%;
+}
+.photo-text {
+  padding: 130px;
+}
+.section-text {
+  padding-top: 5px;
+  font-size: 30px;
+}
+.photo-button {
+  margin-top: 20px;
+  height: 35px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.section-2 {
+  height: 50vh;
+}
+.section2-texts p {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.section2-texts h3 {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+.fontawesome {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 60px;
+}
+
+.fontawesome1 i,
+.fontawesome2 i {
+  margin-left: 80px;
+  font-size: 40px;
+}
+
+.fontawesome3 img,
+.fontawesome4 i {
+  margin-left: 80px;
+  font-size: 40px;
+}
+
+.fontawesome1 h2,
+.fontawesome2 h2 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.fontawesome3 h2 {
+  margin-left: 20px;
+}
+.fontawesome4 h2 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.fontawesome1 p,
+.fontawesome2 p,
+.fontawesome3 p,
+.fontawesome4 p {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.section-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: aliceblue;
+}
+.section-3 .first,
+.second,
+.third {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(238, 200, 8);
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+.section-3 .first .section3-i,
+.third .section3-i {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.footer {
+  height: 40vh;
+}
+.footer .one {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.footer .one .left {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+}
+.left i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.right {
+  display: flex;
+}
+.right i {
+  margin: 0 7px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.footer .two .hello {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+.location1 p,
+.location2 p,
+.location3 p {
+  margin-top: 15px;
+}
+.footer .two {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-li li {
+  margin-top: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+.term-condition {
+  height: 10vh;
+  background-color: rgb(172, 180, 180);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+hr {
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  
+  
+  
+    .left-nav h1{
+       font-size: 17px;
+      }
+  
+  
+  .right-nav ul li{
+    margin: 0 6px;
+    font-size: 13px
+  }
+  .section-1{
+    height: 450px;
+  }
+  .photo-text {
+    padding: 80px;
+  }
+  .section-2{
+    height: 131vh;
+  }
+    .fontawesome {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 0;
+  }
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    height: 141vh;
+  }
+  .section-3 .first,
+  .second,
+  .third {
+    width: 195px;
+    height: 175px;
+    margin: 20px;
+    padding: 50px;
+  }
+  hr{
+    margin-left: 20px;
+  }
+  .footer {
+    height: 70vh;
+    margin-left: 20px;
+  }
+  .footer .one {
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+  }
+  .footer .one .right i{
+    font-size: 24px;
+  }
+  .footer .two .hello {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-li li{
+    margin: 15px 12px;
+  }
+  .term-condition {
+    flex-direction: column;
+  }
+}
